@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	WWW
 %define	pnam	Google-PageRank
-Summary:	WWW::Google::PageRank - Query google pagerank of page
-#Summary(pl):	
+Summary:	WWW::Google::PageRank - Query Google pagerank of page
+Summary(pl):	WWW::Google::PageRank - zapytanie o ranking strony w Google
 Name:		perl-WWW-Google-PageRank
 Version:	0.09
 Release:	1
@@ -15,26 +15,35 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	881b8b8ea811ec4e3d2ec36226622ccf
+URL:		http://search.cpan.org/dist/WWW-Google-PageRank/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(LWP::UserAgent)
 BuildRequires:	perl(URI::Escape)
+BuildRequires:	perl-URI
+BuildRequires:	perl-libwww
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The C<WWW::Google::PageRank> is a class implementing a interface for
-querying google pagerank.
+The WWW::Google::PageRank is a class implementing a interface for
+querying Google pagerank.
 
-To use it, you should create C<WWW::Google::PageRank> object and use
+To use it, you should create WWW::Google::PageRank object and use
 its method get(), to query page rank of URL.
 
-It uses C<LWP::UserAgent> for making request to Google.
+It uses LWP::UserAgent for making request to Google.
 
-# %description -l pl
-# TODO
+%description -l pl
+WWW::Google::PageRank to klasa implementuj±ca interfejs do odpytywania
+Google o ranking strony.
+
+Aby go u¿yæ, nale¿y utworzyæ obiekt WWW::Google::PageRank i u¿yæ jego
+metody get() do zapytania o ranking strony o podanym URL-u.
+
+Klasa u¿ywa LWP::UserAgent do wykonywania zapytañ do serwisu Google.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
