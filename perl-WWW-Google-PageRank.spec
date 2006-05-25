@@ -9,7 +9,7 @@ Summary:	WWW::Google::PageRank - Query Google pagerank of page
 Summary(pl):	WWW::Google::PageRank - zapytanie o ranking strony w Google
 Name:		perl-WWW-Google-PageRank
 Version:	0.12
-Release:	2
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
