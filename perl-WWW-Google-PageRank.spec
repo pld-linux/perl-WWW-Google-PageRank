@@ -6,7 +6,7 @@
 %define	pdir	WWW
 %define	pnam	Google-PageRank
 Summary:	WWW::Google::PageRank - Query Google pagerank of page
-Summary(pl):	WWW::Google::PageRank - zapytanie o ranking strony w Google
+Summary(pl.UTF-8):   WWW::Google::PageRank - zapytanie o ranking strony w Google
 Name:		perl-WWW-Google-PageRank
 Version:	0.12
 Release:	1
@@ -36,14 +36,14 @@ its method get(), to query page rank of URL.
 
 It uses LWP::UserAgent for making request to Google.
 
-%description -l pl
-WWW::Google::PageRank to klasa implementuj±ca interfejs do odpytywania
+%description -l pl.UTF-8
+WWW::Google::PageRank to klasa implementujÄ…ca interfejs do odpytywania
 Google o ranking strony.
 
-Aby go u¿yæ, nale¿y utworzyæ obiekt WWW::Google::PageRank i u¿yæ jego
+Aby go uÅ¼yÄ‡, naleÅ¼y utworzyÄ‡ obiekt WWW::Google::PageRank i uÅ¼yÄ‡ jego
 metody get() do zapytania o ranking strony o podanym URL-u.
 
-Klasa u¿ywa LWP::UserAgent do wykonywania zapytañ do serwisu Google.
+Klasa uÅ¼ywa LWP::UserAgent do wykonywania zapytaÅ„ do serwisu Google.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
