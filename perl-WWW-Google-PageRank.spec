@@ -6,7 +6,7 @@
 %define	pdir	WWW
 %define	pnam	Google-PageRank
 Summary:	WWW::Google::PageRank - Query Google pagerank of page
-Summary(pl.UTF-8):   WWW::Google::PageRank - zapytanie o ranking strony w Google
+Summary(pl.UTF-8):	WWW::Google::PageRank - zapytanie o ranking strony w Google
 Name:		perl-WWW-Google-PageRank
 Version:	0.12
 Release:	1
