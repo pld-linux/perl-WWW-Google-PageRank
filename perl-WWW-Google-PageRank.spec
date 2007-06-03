@@ -8,13 +8,13 @@
 Summary:	WWW::Google::PageRank - Query Google pagerank of page
 Summary(pl.UTF-8):	WWW::Google::PageRank - zapytanie o ranking strony w Google
 Name:		perl-WWW-Google-PageRank
-Version:	0.12
+Version:	0.13
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5b7822f97fff0d0926f8c5be99beed7c
+Source0:	http://www.cpan.org/modules/by-module/WWW/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	0fffeedbecad836b91cc39bff82ed460
 URL:		http://search.cpan.org/dist/WWW-Google-PageRank/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
